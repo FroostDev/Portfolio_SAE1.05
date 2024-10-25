@@ -13,6 +13,12 @@ h1, h2, h3 {
     color: white;
 }
 
+p{
+    font-family: antic;
+    font-size: 30px;
+    color: #FFF;
+}
+
 a {
     text-decoration: none;
 }
@@ -62,8 +68,10 @@ header {
 ----Style du home----
 ------------------ */
 
-.home-zone {
-    min-height: 100vh;
+.big-zone{
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
 }
 
 .big-title {
@@ -110,10 +118,76 @@ header {
     padding: 8px;
     box-shadow: #FFF 0px 0px 20px;
     width: fit-content;
-    
-    display: flex;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    
+    margin-top: auto;
+}
+
+.scroll-btn:hover{
+    padding: 12px;
+    transition: 0.4s;
+}
+
+.scroll-btn:not(:hover){
+    transition: 0.4s;
+}
+
+/* --------------------------
+----Style de presentation----
+-------------------------- */
+
+.presentation-zone {
+    min-height: 100vh;
+}
+
+.presentation-title {
+    font-family: Audiowide;
+    font-size: 45px;
+}
+
+.presentation-title-placement {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.photo-and-text-zone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 128px;
+    margin-right: 128px;
+    margin-top: 64px;
+}
+
+.presentation-text {
+    width: 50%;
+}
+
+.round-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background-image: url(../img/visage.jpg);
+    background-position: 10px;
+}
+
+/* --------------------
+----Style du footer----
+-------------------- */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright>p {
+    margin: 0px;
+    font-size: 16px;
 }
