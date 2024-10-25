@@ -64,7 +64,7 @@ header {
 
 .big-title {
     font-size: 70px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .zone-title {
@@ -84,5 +84,18 @@ header {
     color: #7D005C;
     background: #FFF;
     font-size: 20px;
-    padding: 8px;
+    font-family: Antic;
+    padding: 8px 40px;
+    border-radius: 30px;
+    margin-top: 64px;
+    box-shadow: #FFF 0px 0px 20px;
+}
+
+.decouvrir-btn:hover {
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+.decouvrir-btn:not(:hover){
+    transition: 0.4s;
 }
