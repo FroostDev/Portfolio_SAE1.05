@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    background-image: url(../img/background.svg);
+    background-size: cover;
+}
+
+img{
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: Audiowide;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --------------------
+----Style du header----
+-------------------- */
+
+header {
+    padding: 32px 0px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.logo-header{
+    width: 6%;
+    margin-left: 5%;
+}
+
+.name-header {
+    font-size: 40px;
+}
+
+.link-to-left {
+    margin-left: auto;
+}
+
+.link-margin {
+    margin-right: 5%;
+}
+
+.link-header {
+    font-size: 16px;
+}
+
+.link-header>h2:hover {
+    color: magenta;
+    transition: 0.4s;
+}
+
+.link-header>h2:not(:hover){
+    transition: 0.4s;
+}
+
+/* ------------------
+----Style du home----
+------------------ */
+
+.big-title {
+    font-size: 70px;
+    margin-bottom: 32px;
+}
+
+.zone-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sous-titre {
+    font-family: Antic;
+    font-size: 32px;
+    color: #FFF;
+    margin: 0px;
+}
+
+.decouvrir-btn {
+    color: #7D005C;
+    background: #FFF;
+    font-size: 20px;
+    padding: 8px;
+}
