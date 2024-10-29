@@ -73,6 +73,19 @@ header {
 ----Style du home----
 ------------------ */
 
+.home-grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+}
+
+.left-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    margin-left: 32px;
+}
+
 .big-zone{
     display: flex;
     flex-direction: column;
