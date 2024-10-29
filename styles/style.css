@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-image: url(../img/background.svg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 img{
@@ -21,6 +22,10 @@ p{
 
 a {
     text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* --------------------
@@ -185,9 +190,72 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .copyright>p {
     margin: 0px;
     font-size: 16px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 33px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 32px;
+}
+
+.logo-footer {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-link>a {
+    color: #FFF;
+    font-family: Antic;
+}
+
+.footer-link>a:hover{
+    color: magenta;
+    transition: 0.4s;
+}
+
+.footer-link>a:not(:hover){
+    transition: 0.4s;
+}
+
+.git-logo{
+    width: 32px;
+}
+
+.link-social-media{
+    display: flex;
+    gap: 16px;
+}
+
+.footer-left>p{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 32px;
+}
+
+.test{
+    display: flex;
+    align-items: flex-end;
+    padding: 50px;
 }
