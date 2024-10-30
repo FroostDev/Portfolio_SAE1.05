@@ -86,6 +86,19 @@ header {
     margin-left: 32px;
 }
 
+.right-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #FFF;
+}
+
+.code-decoration {
+    rotate: -90deg;
+    margin-bottom: 32px;
+    white-space: nowrap;
+}
+
 .big-zone{
     display: flex;
     flex-direction: column;
