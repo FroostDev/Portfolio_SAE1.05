@@ -1,20 +1,22 @@
-body{
+body {
     margin: 0;
     background-image: url(../img/background.svg);
     background-size: cover;
     background-attachment: fixed;
 }
 
-img{
+img {
     width: 100%;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: Audiowide;
     color: white;
 }
 
-p{
+p {
     font-family: antic;
     font-size: 30px;
     color: #FFF;
@@ -39,7 +41,7 @@ header {
     gap: 64px;
 }
 
-.logo-header{
+.logo-header {
     width: 6%;
     margin-left: 5%;
 }
@@ -65,7 +67,7 @@ header {
     transition: 0.4s;
 }
 
-.link-header>h2:not(:hover){
+.link-header>h2:not(:hover) {
     transition: 0.4s;
 }
 
@@ -86,22 +88,26 @@ header {
     margin-left: 32px;
 }
 
-.right-grid {
+/* .right-grid {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     color: #FFF;
+    margin-right: 0px;
 }
 
 .code-decoration {
     rotate: -90deg;
     margin-bottom: 32px;
     white-space: nowrap;
-}
-
-.big-zone{
     display: flex;
     flex-direction: column;
+    margin-top: auto;
+} */
+
+.big-zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 75vh;
 }
 
@@ -139,7 +145,7 @@ header {
     transition: 0.4s;
 }
 
-.decouvrir-btn:not(:hover){
+.decouvrir-btn:not(:hover) {
     transition: 0.4s;
 }
 
@@ -154,12 +160,12 @@ header {
     margin-top: auto;
 }
 
-.scroll-btn:hover{
+.scroll-btn:hover {
     padding: 12px;
     transition: 0.4s;
 }
 
-.scroll-btn:not(:hover){
+.scroll-btn:not(:hover) {
     transition: 0.4s;
 }
 
@@ -238,7 +244,7 @@ footer {
     align-items: center;
 }
 
-.footer-link{
+.footer-link {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -249,38 +255,38 @@ footer {
     font-family: Antic;
 }
 
-.footer-link>a:hover{
+.footer-link>a:hover {
     color: magenta;
     transition: 0.4s;
 }
 
-.footer-link>a:not(:hover){
+.footer-link>a:not(:hover) {
     transition: 0.4s;
 }
 
-.git-logo{
+.git-logo {
     width: 32px;
 }
 
-.link-social-media{
+.link-social-media {
     display: flex;
     gap: 16px;
 }
 
-.footer-left>p{
+.footer-left>p {
     font-size: 16px;
     margin-top: 0px;
     margin-bottom: 8px;
 }
 
-.footer-left{
+.footer-left {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     margin-left: 32px;
 }
 
-.test{
+.test {
     display: flex;
     align-items: flex-end;
     padding: 50px;
