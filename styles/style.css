@@ -88,6 +88,10 @@ header {
     margin-left: 32px;
 }
 
+/* Marche pas -> Aide Lehmann Lundi 8h00 
+Besoin orientation -90 deg
+Besoin de retirer margin au coté droit de la page*/
+
 /* .right-grid {
     display: flex;
     flex-direction: column;
