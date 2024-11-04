@@ -228,6 +228,7 @@ header {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
 }
 
 .copyright {
@@ -294,9 +295,11 @@ footer {
 }
 
 .test {
-    display: flex;
-    align-items: flex-end;
     padding: 50px;
+    position: absolute;
+    right: 5%;
+    left: 5%;
+    bottom: 1%;
 }
 
 
