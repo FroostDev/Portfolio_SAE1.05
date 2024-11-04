@@ -31,7 +31,7 @@
         ------- Homepage -------
         -------------------- -->
     <main>
-        <div class="home-grid-container">
+        <div class="home-grid-container" data-class="anim">
 
             <div class="left-grid">
                 <a href="https://www.linkedin.com/in/michaël-vlesik-schmitt-19906332a/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
@@ -68,19 +68,16 @@
             </div>
 
             <div class="right-grid">
-
-                <!-- Marche pas -->
-
-                <!-- <div class="code-decoration">
+                <div class="code-decoration">
                     <div>&lt;meta charset="UTF-8"&gt;</div>
                     <div>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</div>
                     <div>&lt;title&gt;Portfolio de Michaël&lt;/title&gt;</div>
-                </div> -->
+                </div>
             </div>
 
         </div>
 
-        <div class="presentation-zone">
+        <div class="presentation-zone" data-class=anim data-delay=200>
             <div class="presentation-title-placement">
                 <h3 class="presentation-title">Qui suis-je ?</h3>
             </div>
@@ -129,6 +126,45 @@
             </div>
         </div>
     </main>
+
 </body>
+
+<script>
+    document.addEventListener("scroll", addClass, {passive: true});
+    function addClass(){
+        document.querySelectorAll("[data-class]").forEach(e=>{
+            if(e.getBoundingClientRect().y < window.innerHeight - (e.dataset.offset || 0)){
+                setTimeout(()=>{
+                    e.classList.add(e.dataset.class);
+                    e.removeAttribute("data-class");
+                }, e.dataset.delay || 0)
+            }
+        })
+    }
+    addClass();
+
+    /*************/
+	/* Version avec suppression de la class quand on remonte */
+	/*************/
+
+    function addClass() {
+			document.querySelectorAll("[data-class]").forEach(e => {
+				if (e.getBoundingClientRect().y < window.innerHeight - (e.dataset.offset || 0)) {
+					if(!e.classList.contains(e.dataset.class) && (e.dataset.timer || "") == ""){
+						e.dataset.timer = setTimeout(() => {
+							e.classList.add(e.dataset.class);
+							clearTimeout(e.dataset.timer);
+							e.dataset.timer = "";
+						}, e.dataset.delay || 0)
+					}
+				} else {
+					if(e.dataset.timer)clearTimeout(e.dataset.timer);
+					e.classList.remove(e.dataset.class);
+				}
+			})
+		}
+		window.addEventListener("scroll", addClass, { passive: true });
+		addClass();
+</script>
 
 </html>

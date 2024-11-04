@@ -81,6 +81,8 @@ header {
 ------------------ */
 
 .home-grid-container {
+    position: relative;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 0.5fr 3fr 0.5fr;
 }
@@ -146,6 +148,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
+    margin-bottom: 32px;
 }
 
 .scroll-btn:hover {
@@ -154,25 +157,25 @@ header {
 
     /* Colonne de gauche home */
 
-/* Marche pas
-Besoin orientation -90 deg
-Besoin de retirer margin au coté droit de la page*/
-
-/* .right-grid {
+.right-grid {
+    position: absolute;
     display: flex;
     flex-direction: column;
     color: #FFF;
     margin-right: 0px;
+    left: calc(100% - 32px) ;
+    bottom: 0px;
 }
 
 .code-decoration {
+    transform-origin: 0 100%;
     rotate: -90deg;
     margin-bottom: 32px;
     white-space: nowrap;
     display: flex;
     flex-direction: column;
     margin-top: auto;
-} */
+}
 
 /* --------------------------
 ----Style de presentation----
@@ -295,3 +298,17 @@ footer {
     align-items: flex-end;
     padding: 50px;
 }
+
+
+
+.presentation-zone,
+.home-grid-container{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.anim{
+    transition: 0.4s;
+    opacity: 1;
+    transform:translateX(0);
+}
+
