@@ -1,35 +1,3 @@
-body {
-    margin: 0;
-    background-image: url(../img/background.svg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-img {
-    width: 100%;
-}
-
-h1,
-h2,
-h3 {
-    font-family: Audiowide;
-    color: white;
-}
-
-p {
-    font-family: antic;
-    font-size: 30px;
-    color: #FFF;
-}
-
-a {
-    text-decoration: none;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 /* Permet de ne pas répéter les transitions dans tout le code */
 
 .link-header > h2, 
@@ -38,42 +6,6 @@ html {
 .footer-link > a,
 .round-image {
     transition: 0.4s;
-}
-
-/* --------------------
-----Style du header----
--------------------- */
-
-header {
-    padding: 32px 0px;
-    display: flex;
-    align-items: center;
-    gap: 64px;
-}
-
-.logo-header {
-    width: 6%;
-    margin-left: 5%;
-}
-
-.name-header {
-    font-size: 40px;
-}
-
-.link-to-left {
-    margin-left: auto;
-}
-
-.link-margin {
-    margin-right: 5%;
-}
-
-.link-header {
-    font-size: 16px;
-}
-
-.link-header>h2:hover {
-    color: magenta;
 }
 
 /* ------------------
@@ -302,7 +234,9 @@ footer {
     bottom: 1%;
 }
 
-
+/* -------------- */
+/* Anim au scroll */
+/* -------------- */
 
 .presentation-zone,
 .home-grid-container{

@@ -1,0 +1,24 @@
+.sae {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding: 16px;
+    background: rgb(0, 0, 0, 0.4);
+    border-radius: 30px;
+}
+
+.zone-sae {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-sae {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-left: 128px;
+    margin-right: 128px;
+}
