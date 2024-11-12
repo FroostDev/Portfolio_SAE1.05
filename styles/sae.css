@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
     width: 350px;
     padding: 16px;
     background: rgb(0, 0, 0, 0.2);
@@ -35,8 +36,13 @@
     backdrop-filter: blur(20px);
 }
 
+.sae>p {
+    text-align: center;
+}
+
 .sae:hover {
-    padding: 32px;
+    /* padding: 32px; */
+    transform: scale(1.3);
 }
 
 .competences {
@@ -44,5 +50,6 @@
     padding: 16px 64px;
     border-radius: 20px;
     color: #FFF;
+    margin-bottom: 32px;
 }
 
