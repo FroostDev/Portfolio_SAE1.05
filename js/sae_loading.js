@@ -13,10 +13,10 @@ for(let t = 0; t<sae_number.length; t++) {
     if(comp[t].length>1) {
         let tmp2 =""
         comp[t].forEach(e => {
-            tmp2+=" | "+e;
+            tmp2+=e+" ";
         })
         
-        tmp+='<div class="competences"><marquee direction="right" scrollamount="5">'+tmp2+'</marquee></div>';
+        tmp+='<div class="competences"><marquee direction="left" scrollamount="6">'+tmp2+'</marquee></div>';
     }
     
     else {
