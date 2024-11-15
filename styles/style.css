@@ -63,8 +63,11 @@
     font-family: Antic;
     padding: 8px 40px;
     border-radius: 30px;
+    box-shadow: #FFF 0px 0px 20px;  
+}
+
+.decouvrir-btn-position {
     margin-top: 64px;
-    box-shadow: #FFF 0px 0px 20px;
 }
 
 .decouvrir-btn:hover {

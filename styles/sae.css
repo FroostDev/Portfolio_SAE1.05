@@ -1,46 +1,57 @@
 /* Permet de ne pas répéter les transitions dans tout le code */
+    /* Rajouter les class si besoin d'autre transition */
 
-.sae {
+.sae-color {
     transition: 0.4s;
 }
 
-.zone-sae {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
+/* Position du gros titre au centre */
 
 .sae-title {
     font-size: 40px;
+    display: flex;
+    justify-content: center;
 }
+
+
+/* Style de la div contenant toute les div sae*/
 
 .container-sae {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 64px;
     margin-left: 128px;
     margin-right: 128px;
 }
+
+
+/* Div pour la couleur de fond des sae car sinon bug de stretch */
+
+.sae-color {
+    background: rgb(0, 0, 0, 0.1);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    width: 350px;
+}
+
+
+/* Style contenu des div sae */
 
 .sae {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
-    width: 350px;
     padding: 16px;
-    background: rgb(0, 0, 0, 0.1);
-    border-radius: 30px;
-    backdrop-filter: blur(20px);
 }
 
 .sae>p {
     text-align: center;
 }
 
-.sae:hover {
+.sae-color:hover {
     transform: scale(1.1);
 }
 
@@ -50,4 +61,7 @@
     border-radius: 20px;
     color: #FFF;
     margin-bottom: 32px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
