@@ -17,4 +17,3 @@ for(let t = 0; t<sae_number.length; t++) {
 }
 
 document.querySelector(".container-sae").innerHTML = zone_sae
-
