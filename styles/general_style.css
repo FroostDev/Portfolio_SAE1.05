@@ -30,6 +30,7 @@ p {
 
 a {
     text-decoration: none;
+    transition: 0.3s;
 }
 
 html {
@@ -135,7 +136,7 @@ footer {
 }
 
 .footer-link>a:hover {
-    color: magenta;
+    color: #ff00ff;
 }
 
 .git-logo {
