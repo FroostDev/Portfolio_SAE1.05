@@ -44,10 +44,11 @@ h3 {
 .competences>div {
     background: #FFF;
     border-radius: 15px;
-    width: fit-content;
     padding: 8px 32px;
     font-size: 20px;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
 }
 
 
