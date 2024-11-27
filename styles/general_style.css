@@ -11,6 +11,10 @@ body {
     cursor: crosshair;
 }
 
+* {
+    transition: 0.3s;
+}
+
 img {
     width: 100%;
 }
@@ -30,7 +34,11 @@ p {
 
 a {
     text-decoration: none;
-    transition: 0.3s;
+    color: #FFF;
+}
+
+a:hover {
+    color: #ff00ff;
 }
 
 html {
@@ -162,5 +170,6 @@ footer {
 }
 
 .footer-zone {
-    padding: 50px;
+    margin-bottom: 32px;
+    margin-top: 128px;
 }

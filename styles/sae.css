@@ -1,11 +1,3 @@
-/* Permet de ne pas répéter les transitions dans tout le code */
-    /* Rajouter les class si besoin d'autre transition */
-
-.sae-color {
-    transition: 0.4s;
-}
-
-
 /* Position du gros titre au centre */
 
 .sae-title {

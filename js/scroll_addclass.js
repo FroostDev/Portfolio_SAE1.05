@@ -33,3 +33,5 @@ function addClass() {
     }
     window.addEventListener("scroll", addClass, { passive: true });
     addClass();
+
+// Code copié collé de celui de monsieur Lehmann (pas besoin d'expliquer)
