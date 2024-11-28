@@ -156,7 +156,7 @@
     <!-- script permettant de mettre à jour la date de modifictaion du contenu du site -->
     <script>
         const date = new Date(document.lastModified)
-        const options =  {year:"numeric", month:"long", day:'numeric'}
+        const options =  {year:"numeric", month:"long", day:'numeric', hour:"numeric"}
         const formattedDate = date.toLocaleDateString("fr-FR", options)
         document.querySelector(".maj").innerText = "Màj : " + formattedDate
     </script>
