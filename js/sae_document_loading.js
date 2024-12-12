@@ -26,7 +26,7 @@ SAE[num_sae].compétences.forEach(element => {
 
 // Je sépare les AC en plusieurs paragraphes
 for(let i = 0; i<ac_key.length; i++) {
-    ac_html += '<p><a href=>'+ac_key[i]+' : '+ac_value[i]+'</a></div>'
+    ac_html += '<p><a href="../pdf/'+num_sae+'.pdf" target=blank_>'+ac_key[i]+' : '+ac_value[i]+'</a></div>'
 }
 
 for(let j = 0; j<ressource_key.length; j++) {
